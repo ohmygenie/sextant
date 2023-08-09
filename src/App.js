@@ -3,6 +3,7 @@ import './App.css';
 import AddressRequest from './components/AddressRequest'; // Ensure you've imported this
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
+import PacketLatency from './components/PacketLatency';
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         <Exhibit title="IPv6 Address">
           <AddressRequest ipVersion="ipv6" />
         </Exhibit>
+
+        <Exhibit title="Packet Latency from Pylon">
+        <PacketLatency />
+         </Exhibit>
+
       </header>
     </div>
   );
